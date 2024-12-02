@@ -1,0 +1,4 @@
+fastapi[all]
+peewee
+python-dotenv
+psycopg2-binary
