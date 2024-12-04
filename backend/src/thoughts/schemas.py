@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 from datetime import datetime
 
-class ThoughtCreate(BaseModel):
+class Thought(BaseModel):
     user_id: int
     text: str
     datetime: datetime
