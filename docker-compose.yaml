@@ -23,5 +23,16 @@ services:
     ports:
       - "5432:5432"
 
+  tests:
+    build: ./backend
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=postgresql://postgres:password@db:5432/mydatabase
+      - PYTHONPATH=/app/src
+    command: pytest tests/
+    volumes:
+      - ./backend:/app
+
 volumes:
   postgres_data:
