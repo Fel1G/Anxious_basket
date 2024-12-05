@@ -4,7 +4,7 @@
 # 💾 Установка
 1. Скачать репозиторий
 ```Shell
-git clone https://github.com/Fel1G/Anxious_basket.git && cd Anxious_basket
+git clone https://github.com/IPChekhov/Anxious_basket.git && cd Anxious_basket
 ```
 
 2. Запустить docker-compose
